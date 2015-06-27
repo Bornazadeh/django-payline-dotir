@@ -12,6 +12,9 @@ Detailed documentation is in the "docs" directory.
 
 Installation
 ------------
+0. create a django project
+django-admin startproject payline_ir
+
 1. install django-payline-dotir
 pip install django-payline-dotir
 
@@ -21,9 +24,8 @@ pip install django-payline-dotir
         'payline_dotir',
     )
 
-3. Include the polls URLconf in your project urls.py like this::
-
-    url(r'^payline_dotir', include('payline_dotir.urls')),
+3. add PAYLINE_DOTIR_API = "your api key from http://payline.ir"
+and for test ourpese add IS_PAYLINE_DOTIR_TEST = True to settings.py
 
 4. Run `python manage.py migrate` to create the polls models.
 
