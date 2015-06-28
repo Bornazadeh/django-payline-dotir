@@ -1,5 +1,5 @@
 include LICENSE
-include README.md
+include README.rst
 recursive-include payline_dotir/static *
 recursive-include payline_dotir/templates *
 recursive-include docs *

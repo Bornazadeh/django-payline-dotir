@@ -9,7 +9,7 @@ setup(
     author='Mahdi Bornazadeh',
     author_email='Bornazadeh@gmail.com',
     description='Persian payline.ir payment gateway in django.',
-    long_description=open("README.md", 'rb').read().decode('utf-8'),
+    long_description=open("README.rst", 'rb').read().decode('utf-8'),
     license='BSD License',
     url='http://www.bornazadeh.ir/payline',
     zip_safe=False,
