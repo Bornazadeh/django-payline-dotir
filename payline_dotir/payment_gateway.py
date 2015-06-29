@@ -18,6 +18,8 @@ def send_url(amount, redirect_url, url, api):
     print(id_get)
     if int(id_get) > 0:
         print(".معتبر است id_get")
+        payment_gateway_url = '%s%s' % (GATEWAY_URL_FINAL, id_get)
+        return payment_gateway_url
     elif id_get == "-1":
         print("‫‪ api‬ارسالی با نوع ‪ api‬تعریف شده در ‪ payline‬سازگار نیست.‬")
     elif id_get == "-2":
@@ -28,10 +30,6 @@ def send_url(amount, redirect_url, url, api):
         print("‫درگاهی با اطلاعات ارسالی شما یافت نشده و یا در حالت انتظار می باشد.‬")
     else:
         print("some other error(s) occurred.")
-    payment_gateway_url = '%s%s' % (GATEWAY_URL_FINAL, id_get)
-
-    return payment_gateway_url
-
 
 def get_result(api, trans_id, id_get):
     '''
