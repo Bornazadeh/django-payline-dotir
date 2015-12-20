@@ -27,5 +27,5 @@ pip install django-payline-dotir
 3. add PAYLINE_DOTIR_API = "your api key from http://payline.ir"
 and for test ourpese add IS_PAYLINE_DOTIR_TEST = True to settings.py
 
-4. Run `python manage.py migrate` to create the polls models.
+4. Run `python manage.py migrate` to create the models.
 
