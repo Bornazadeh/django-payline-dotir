@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Payment</title>
+</head>
+<body>
+    <form action="/gateway/" method="post">
+        {% csrf_token %}
+        <input id="amount_id"type="text" name="amount">
+        <input type="submit" value="pay">
+    </form>
+</body>
+</html>
