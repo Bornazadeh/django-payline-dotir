@@ -1,5 +1,3 @@
-include LICENSE
-include README.rst
-recursive-include payline_dotir/static *
-recursive-include payline_dotir/templates *
+include LICENSE README.rst
 recursive-include docs *
+recursive-include example *
