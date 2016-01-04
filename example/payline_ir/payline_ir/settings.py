@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'payline_ir',
 )
 IS_PAYLINE_DOTIR_TEST = True
-#PAYLINE_DOTIR_API = None
+PAYLINE_DOTIR_API = "None"
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

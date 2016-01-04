@@ -14,9 +14,10 @@ CHECK_URL_TEST = 'http://payline.ir/payment-test/gateway-result-second'
 IS_PAYLINE_DOTIR_TEST = getattr(settings, 'IS_PAYLINE_DOTIR_TEST', 
     False)
 try:
-    PAYLINE_DOTIR_API = getattr(settings, 'PAYLINE_DOTIR_API', 
-    None)
+    PAYLINE_DOTIR_API = getattr(settings, 'PAYLINE_DOTIR_API')
 except AttributeError:
+    if IS_PAYLINE_DOTIR_TEST:
+        pass
     raise ImproperlyConfigured("You need to define PAYLINE_DOTIR_API "
                                "in your settings module "
                                "to use the payline.ir payment processor.")
