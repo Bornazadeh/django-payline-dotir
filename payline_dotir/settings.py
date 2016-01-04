@@ -4,15 +4,14 @@ from django.core.exceptions import ImproperlyConfigured
 
 SEND_URL = 'http://payline.ir/payment/gateway-send'
 SEND_URL_TEST = 'http://payline.ir/payment-test/gateway-send'
-# PAYLINE_DOTIR_API = settings.PAYLINE_DOTIR_API
 PAYLINE_DOTIR_API_TEST = 'adxcv-zzadq-polkjsad-opp13opoz-1sdf455aadzmck1244567'
 GATEWAY_URL = 'http://payline.ir/payment/gateway-'
 GATEWAY_URL_TEST = 'http://payline.ir/payment-test/gateway-'
 CHECK_URL = 'http://payline.ir/payment/gateway-result-second'
 CHECK_URL_TEST = 'http://payline.ir/payment-test/gateway-result-second'
-#PAYLINE_DOTIR_TEST = settings.PAYLINE_DOTIR_TEST
-IS_PAYLINE_DOTIR_TEST = getattr(settings, 'IS_PAYLINE_DOTIR_TEST', 
-    False)
+
+IS_PAYLINE_DOTIR_TEST = getattr(settings, 'IS_PAYLINE_DOTIR_TEST',
+                                False)
 try:
     PAYLINE_DOTIR_API = getattr(settings, 'PAYLINE_DOTIR_API')
 except AttributeError:

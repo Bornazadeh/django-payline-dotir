@@ -2,10 +2,11 @@ import os
 from setuptools import setup, find_packages
 
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+from payline_dotir import __version__ as version
 
 setup(
     name='django-payline-dotir',
-    version='0.2',
+    version=version,
     author='Mahdi Bornazadeh',
     author_email='Bornazadeh@gmail.com',
     description='Persian payline.ir payment gateway in django.',
