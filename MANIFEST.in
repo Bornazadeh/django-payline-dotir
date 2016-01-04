@@ -1,3 +1,10 @@
 include LICENSE README.rst
 recursive-include docs *
-recursive-include example *
+recursive-include example/payline_ir *
+include example/payline_ir/README.rst
+recursive-exclude example/payline_ir/payline_ir/__pycache__ *
+recursive-exclude example/payline_ir/payline_ir *.pyc
+recursive-exclude example/payline_ir/.tox *
+recursive-exclude * *~
+recursive-exclude * tox.ini
+exclude example/payline_ir/db.sqlite3
