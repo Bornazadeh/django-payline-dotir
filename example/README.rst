@@ -12,8 +12,6 @@ Install example
 1. clone this repo::
 clone https://github.com/Bornazadeh/django-payline-dotir
 
-
-
 2. cd to the example directory::
 cd django-payline-dotir/example/payline_ir
 
