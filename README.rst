@@ -36,3 +36,11 @@ and for test purpose add IS_PAYLINE_DOTIR_TEST = True to settings.py
 example project is in the example directory.
 
 5. Enjoy!
+
+source code
+-----------
+source code can be found here
+
+https://github.com/Bornazadeh/django-payline-dotir
+
+Please use this repo for issue ,bug reporting and also patch and PR :).
